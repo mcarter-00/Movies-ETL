@@ -7,6 +7,7 @@ The "process_ETL" function runs through the data pipeline from extraction, trans
 #### Assumptions:
 * User starts with a data file, such as a .json and .csv, to use this function.
 * Exploratory data is done prior to or apart from using this function.
-* It is permissible to remove null data given that half the columns that have more than 6,000 null values.
-* It is permissible to replace NaN with zero's.
+* It is permissible to remove null data given that half the columns from the Wikipedia dataset contain more than 6,000 null values.
+* It is permissible to replace NaN with zero's to better utilize dataset.
+* User is able to calculate statistics for the Ratings dataset given that it is grouped by "MovieID" and "Rating".
 * Theres is a connection to Postgress/SQL to load datasets using this function.
